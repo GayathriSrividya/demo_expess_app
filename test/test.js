@@ -20,13 +20,6 @@ describe('catalog API', ()=>{
             done()
             })
         })
-        it('should not display welcome message if incorrect url is given', (done)=>{
-            chai.request(server)
-            .get('/.')
-            .end((err, response)=>{
-                response.should.have.status(404)
-            done()
-            })
-        })
+        
     })
 })
